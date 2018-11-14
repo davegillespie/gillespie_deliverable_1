@@ -2,12 +2,75 @@
   body {
     background-image: url(bulldog.jpg);
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 100%;
   }
+  .flex-container {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    height: 190px;
+    justify-content: space-between;
+  }
+
+  .topleft {
+    width: 45%;
+
+    font-size: 20;
+    font-weight: 300;
+  }
+  .topright {
+    flex-basis: auto;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+  .bottomleft {
+    width: 35%;
+    margin: 30px;
+  }
+  .bottomright {
+    width: 45%;
+    margin: 30px;
+  }
+  .button1 {
+    color: #88898B;
+    background-color: #F0ECEE;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .button1:hover {
+    background-color: #FF4850;
+    color: white;
+  }
+
+
+
+  .text1 {
+    color: #FF4850;
+  }
+  .text2 {
+    color: #88898B;
+    font-weight: 200;
+  }
+  .text3 {
+    font-size: 30;
+    font-weight: 600;
+  }
+  .text4 {
+    font-weight: 200;
+    color: #88898B;
+  }
+
 }
 html {
   Font-family: Fira Sans;
   background-color: #F0ECEE;
+}
+.flexcontainer {
+  flex-direction: column;
+}
+.topright {
+  flex-direction: column;
 }
 .button {
   color: white;
@@ -19,58 +82,4 @@ html {
 .button:hover {
   background-color: #CCC;
   color: #FF4850;
-}
-
-.button1 {
-  color: #88898B;
-  background-color: #F0ECEE;
-  width: 100%;
-  border-radius: 15px;
-  padding: 10px;
-}
-.button1:hover {
-  background-color: #FF4850;
-  color: white;
-}
-
-.flex-container {
-  display: flex;
-  align-items: stretch;
-  flex-wrap: wrap;
-  height: 100%;
-}
-.topleft {
-  width: 45%;
-  margin: 30px;
-  font-size: 20;
-  font-weight: 300;
-}
-.topright {
-  flex-basis: auto;
-  width: 45%;
-  margin: 30px;
-}
-.bottomleft {
-  width: 35%;
-  margin: 30px;
-}
-.bottomright {
-  width: 45%;
-  margin: 30px;
-}
-
-.text1 {
-  color: #FF4850;
-}
-.text2 {
-  color: #88898B;
-  font-weight: 200;
-}
-.text3 {
-  font-size: 30;
-  font-weight: 600;
-}
-.text4 {
-  font-weight: 200;
-  color: #88898B;
 }
